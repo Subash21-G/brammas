@@ -1,0 +1,56 @@
+/* In App.css or TopBar.css */
+
+.bg-primary {
+  background-color: #000766 !important;
+}
+
+/* CSS for NavBar */
+.academics-dropdown .dropdown-toggle {
+  background-color: orange !important;
+  border-radius: 0;
+  padding: 8px 16px;
+  color: white !important;
+}
+
+.search-circle {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*media responsive*/
+@media (max-width: 768px) {
+  .top-bar-custom {
+    height: 35px;
+  }
+
+  .academics-dropdown .dropdown-toggle {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .search-circle {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-custom {
+    height: 30px;
+  }
+
+  .academics-dropdown .dropdown-toggle {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  .search-circle {
+    width: 30px;
+    height: 30px;
+  }
+}
