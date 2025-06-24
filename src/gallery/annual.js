@@ -3,6 +3,7 @@ import './annual.css';
 import Header from '../components/header.jsx';
 import Annualday from '../gallery/annualday.js'; // your actual page component
 import Footer from'../admin/footer.js';
+import Annualform from './annualform.js';
 
 
 
@@ -18,6 +19,7 @@ function Annual() {
         </div>
       </section>
       <Annualday/>
+      <Annualform/>
       <Footer/>
     </>
   );

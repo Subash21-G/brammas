@@ -15,44 +15,71 @@ const Form = () => {
         <div className="admission-image">
           <img src={overlayImg} alt="Admission Visual" />
         </div>
-        
-
 
         {/* Right Form Section */}
         <div className="admission-form-box">
           <h2>TAKE THE FIRST STEP,<br />FILL THE DETAILS BELOW</h2>
           <form className="form-fields" onSubmit={handleSubmit}>
-
             <div className="form-columns">
               {/* LEFT COLUMN */}
               <div className="form-column">
-                <div className="form-group placeholder-wrapper">
-                  <input id="studentName" name="studentName" type="text" placeholder="Enter Student Name" required />
-                  <span className="red-star1">*</span>
+                <div className="form-group position-relative">
+                  <input
+                    id="studentName"
+                    name="studentName"
+                    type="text"
+                    className="form-control"
+                    placeholder="Enter Student Name"
+                    required
+                  />
+                  <span className="input-star student-name-star">*</span>
                 </div>
 
-                <div className="form-group placeholder-wrapper">
-                  <input id="email" name="email" type="email" placeholder="Enter Email Id" required />
-                  <span className="red-star2">*</span>
+                <div className="form-group position-relative">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    className="form-control"
+                    placeholder="Enter Email Id"
+                    required
+                  />
+                  <span className="input-star email-star">*</span>
                 </div>
 
                 <div className="form-group">
-                  <select name="gender" id="gender" required>
-                    <option value="">Select Gender </option>
+                  <select
+                    name="gender"
+                    id="gender"
+                    className="form-select"
+                    required
+                  >
+                    <option value="">Select Gender</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <input id="previousSchool" name="previousSchool" type="text" placeholder="Enter Previous School" />
+                  <input
+                    id="previousSchool"
+                    name="previousSchool"
+                    type="text"
+                    className="form-control"
+                    placeholder="Enter Previous School"
+                  />
                 </div>
               </div>
 
               {/* RIGHT COLUMN */}
               <div className="form-column">
-                <div className="form-group placeholder-wrapper">
-                  <select name="class" id="class" required>
+                <div className="form-group position-relative">
+                  <select
+                    name="class"
+                    id="class"
+                    className="form-select"
+                    required
+                  >
                     <option value="">Class</option>
                     <option value="I">I</option>
                     <option value="II">II</option>
@@ -60,26 +87,47 @@ const Form = () => {
                     <option value="IV">IV</option>
                     <option value="V">V</option>
                   </select>
-                  <span className="red-star3">*</span>
+                  <span className="input-star class-star">*</span>
                 </div>
 
-                <div className="form-group placeholder-wrapper">
-                  <input id="mobile" name="mobile" type="tel" placeholder="Enter Mobile Number" required />
-                  <span className="red-star4">*</span>
+                <div className="form-group position-relative">
+                  <input
+                    id="mobile"
+                    name="mobile"
+                    type="tel"
+                    className="form-control"
+                    placeholder="Enter Mobile Number"
+                    required
+                  />
+                  <span className="input-star mobile-star">*</span>
                 </div>
 
                 <div className="form-group">
-                  <input id="city" name="city" type="text" placeholder="Enter City" required />
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    className="form-control"
+                    placeholder="Enter City"
+                    required
+                  />
                 </div>
 
                 <div className="form-group">
-                  <textarea id="message" name="message" placeholder="Enter Your Message"  />
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="form-control"
+                    placeholder="Enter Your Message"
+                  />
                 </div>
               </div>
             </div>
 
-            <div className="form-submit">
-              <button type="submit">Submit</button>
+            <div className="form-submit text-center mt-3">
+              <button type="submit" className="btn btn-warning text-white px-4">
+                Submit
+              </button>
             </div>
           </form>
         </div>

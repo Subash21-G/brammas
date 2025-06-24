@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './annual.css'; // You can still keep custom styles for extra tweaks
 
@@ -29,7 +31,7 @@ import img24 from '../assests/a24.jpg';
 import img25 from '../assests/a25.jpg';
 
 const images = [
-  img1, img2, img3, img4, img5,
+   img1,img2, img3, img4, img5,
   img6, img7, img8, img9, img10,
   img11, img12, img13, img14, img15,
   img16, img17, img18, img19, img20,
@@ -37,6 +39,9 @@ const images = [
 ];
 
 const Annualday= () => {
+
+    
+
   return (
      <div className="container1 py-4">
       <div className="row row-cols-5 g-3 justify-content-center">

@@ -301,6 +301,7 @@ media*/
   .school {
     height: auto;
     padding: 40px 15px;
+    
   }
 
   .school h1 {
@@ -327,7 +328,7 @@ media*/
 
   .form-row {
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
   }
 
   .form-row .input-wrapper {
@@ -353,11 +354,11 @@ media*/
 @media (max-width: 768px) {
   .map-overlay a {
     top: 10px;
-    left: 39%;
-    width:270px;
+    left: 23.5%;
+    width:350px;
     transform: translateX(-50%);
     font-size: 14px;
-    padding: 10px 16px;
+    padding: 20px 16px;
     text-align: center;
   }
 
@@ -392,6 +393,204 @@ media*/
  margin-left:100px;
 }
 }
+
+/*
+media 1024*/
+
+@media (max-width: 1024px) {
+  .school {
+    height: auto;
+    padding: 40px 15px;
+    
+  }
+
+  .school h1 {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+
+  .school p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .form-row .input-wrapper {
+    min-width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .form-row button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+    margin-bottom:30px;
+  }
+
+  .form-row textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .map-overlay a {
+    top: 10px;
+    left: 18%;
+    width:350px;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .map-overlay a button {
+    font-size: 12px;
+    padding: 5px 10px;
+    
+  }
+
+  .map-link {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .red-star,
+  .red-star1,
+  .red-star2 {
+    left: 10px;
+    font-size: 16px;
+  }
+.red-star2{
+ margin-left:150px;
+
+}
+
+.red-star{
+ margin-left:155px;
+}
+
+
+.red-star1{
+ margin-left:100px;
+}
+}
+
+@media (max-width: 460px) {
+  .school {
+    height: auto;
+    padding: 40px 15px;
+    
+  }
+
+  .school h1 {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+
+  .school p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .form-row .input-wrapper {
+    min-width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .form-row button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+    margin-bottom:30px;
+  }
+
+  .form-row textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .map-overlay a {
+    top: 10px;
+    left: 31%;
+    width:270px;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .map-overlay a button {
+    font-size: 12px;
+    padding: 5px 10px;
+    
+  }
+
+  .map-link {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .red-star,
+  .red-star1,
+  .red-star2 {
+    left: 10px;
+    font-size: 16px;
+  }
+.red-star2{
+ margin-left:150px;
+
+}
+
+.red-star{
+ margin-left:155px;
+}
+
+
+.red-star1{
+ margin-left:100px;
+}
+}
+
 
 
 

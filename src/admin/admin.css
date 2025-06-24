@@ -130,8 +130,7 @@ html, body {
 
 /* Input, Select, Textarea Styling */
 .form-group input,
-.form-group select,
-.form-group textarea {
+.form-group select {
   padding: 10px 14px;
   font-size: 14px;
   border: 1px solid #ece9e9;
@@ -143,10 +142,29 @@ html, body {
   resize: none;
 }
 
-textarea {
-  height: 42px;
-  resize: none;
+
+
+.form-group textarea {
+  height: 10px;
+  resize: vertical;
 }
+
+.form-group textarea {
+  height: 60px;       /* Reduced height */
+  resize: none;       /* Optional: prevent resizing */
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1px solid #ece9e9;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+
 
 /* Red star for required */
 .red-star {
@@ -183,46 +201,10 @@ textarea {
   position: relative;
 }
 
-.placeholder-wrapper .red-star1 {
-  position: absolute;
-  right: 75px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: red;
-  font-size: 16px;
-}
-
-.placeholder-wrapper .red-star2 {
-  position: absolute;
-  right: 115px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: red;
-  font-size: 16px;
-}
-
-.placeholder-wrapper .red-star3 {
-  position: absolute;
-  right: 165px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: red;
-  font-size: 16px;
-}
-
-.placeholder-wrapper .red-star4 {
-  position: absolute;
-  right: 70px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: red;
-  font-size: 16px;
-}
-
 
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .admission-wrapper {
     padding-top: 30px;
     z-index:3;
@@ -259,26 +241,7 @@ textarea {
     font-size: 20px;
   }
 
-  .placeholder-wrapper .red-star1 {
-  position: absolute;
-  left: 45px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: red;
-  font-size: 16px;
-}
-
-.placeholder-wrapper .red-star2 {
-  left:-45px;
-}
-
-.placeholder-wrapper .red-star3 {
-  right:205px;
-}
-
-.placeholder-wrapper .red-star4 {
-  right:110px;
-}
+ 
 }
 
 /* wavebanners*/
@@ -430,26 +393,27 @@ textarea {
   }
 }
 
+
 @media (max-width: 768px) {
 
   .jet {
-    width: 100px;
-    height: 100px;
-    top: -20px;
-    left: -20px;
+    width: 150px;
+    height: 150px;
+    top: -40px;
+    left: -40px;
   }
 
   .plane-image {
     width: 120px;
     height: auto;
-    top: 520px;
+    top: 820px;
     left: -20px;
   }
 
   .plane-image1 {
     width: 120px;
     height: auto;
-    top: 1020px;
+    top: 300px;
     right: -20px;
   }
 
@@ -473,6 +437,63 @@ textarea {
 
 }
 
+
+/*form align*/
+.input-star {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+/* Field-specific positions: adjust `left` values to match text end */
+.student-name-star {
+  left: calc(1em + 15ch); /* after "Enter Student Name" */
+}
+
+.email-star {
+  left: calc(1em + 11ch); /* after "Enter Email Id" */
+}
+
+.class-star {
+  left: calc(1em + 5ch); /* after "Class" */
+}
+
+.mobile-star {
+  left: calc(1em + 16ch); /* after "Enter Mobile Number" */
+}
+
+@media (max-width: 768px) {
+  .student-name-star {
+    left: calc(1em + 15ch);
+  }
+  .email-star {
+    left: calc(1em + 10.5ch);
+  }
+  .class-star {
+    left: calc(1em + 4.5ch);
+  }
+  .mobile-star {
+    left: calc(1em + 16ch);
+  }
+}
+
+@media (max-width: 480px) {
+  .student-name-star {
+    left: calc(1em + 15ch);
+  }
+  .email-star {
+    left: calc(1em + 10.5ch);
+  }
+  .class-star {
+    left: calc(1em + 4.5ch);
+  }
+  .mobile-star {
+    left: calc(1em + 15.5ch);
+  }
+}
 
 
 
